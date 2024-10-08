@@ -121,7 +121,7 @@ Hay actualmente 5 RIRs en funcionamiento:
 
 .. image:: images/tema08-005.png
 
-Existen un total de 3\ :sup:`32` direcciones IP (4.294.967.296).
+Existen un total de 2\ :sup:`32` direcciones IP (4.294.967.296).
 
 - La mitad (2.147.483.648) están destinadas a redes de clase A: (16.777.216 IPs por cada una de las 128 redes de clase A).
 - Un cuarto (1.073.741.824) están destinadas a redes de clase B: (65.536 IPs por cada una de las 16.384 redes de clase B).
@@ -157,9 +157,9 @@ Dependiendo del número de hosts que se necesiten para cada red, las direcciones
 ====== ======================= ============ ==================== ============================== ==================
 Clase  Formato(r=red, h=host)  Nº de redes  Nº de hosts por red  Rango de direcciones de redes  Máscara de subred
 ====== ======================= ============ ==================== ============================== ==================
-A      r.h.h.h                 128          16.777.214           0.0.0.0 - 127.0.0.0            255.0.0.0
-B      r.r.h.h                 16.384       65.534               128.0.0.0 - 191.255.0.0        255.255.0.0
-C      r.r.r.h                 2.097.152    254                  192.0.0.0 - 223.255.255.0      255.255.255.0
+A      r.h.h.h                 128          16.777.214           0.0.0.0 - 127.255.255.255            255.0.0.0
+B      r.r.h.h                 16.384       65.534               128.0.0.0 - 191.255.255.255        255.255.0.0
+C      r.r.r.h                 2.097.152    254                  192.0.0.0 - 223.255.255.255      255.255.255.0
 D      grupo                   -            -                    224.0.0.0 - 239.255.255.255    -
 E      no válidas              -            -                    240.0.0.0 - 255.255.255.255    -
 ====== ======================= ============ ==================== ============================== ==================
